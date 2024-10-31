@@ -4,7 +4,7 @@ ML Project investigating the links between lightning and aerosol concentrations 
 Data is currently located on an external server as file sizes exceed the limits allowed by GitHub.
 
 ## Data Sources
-This project uses CAPE from the ECMWF ERA5 reanalysis, precipitation from NASA's IMERG satellite, aerosol data from NASA's MERRA-2 reanalysis, and lightning data from the World Wide Lightning Location Network, developed at the University of Washington.
+This project uses convective available potential energy (CAPE) from the ECMWF ERA5 reanalysis, precipitation from NASA's IMERG satellite, aerosol data from NASA's MERRA-2 reanalysis, and lightning data from the World Wide Lightning Location Network (WWLLN), developed at the University of Washington.
 
 ## Data Access
 ### IMERG

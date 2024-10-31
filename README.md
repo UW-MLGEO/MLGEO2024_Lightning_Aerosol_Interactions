@@ -5,3 +5,22 @@ Data is currently located on an external server as file sizes exceed the limits 
 
 ## Data Sources
 This project uses CAPE from the ECMWF ERA5 reanalysis, precipitation from NASA's IMERG satellite, aerosol data from NASA's MERRA-2 reanalysis, and lightning data from the World Wide Lightning Location Network, developed at the University of Washington.
+
+## Data Access
+### IMERG
+The .txt file is located in the data/text_files directory. In order to run the command, the .txt file must be in your present directory, so move it to the directory you wish to extract the files in.
+
+It is possible that the .txt file resets after a few days, in which case another must be generated. In order to do so, download a new list from GES DISC (the proper dataset is located at this link: https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHH_07/summary?keywords=imerg). In order to download data, an account on GES DISC is necessary.
+
+To recreate the domain used in this project, click on "Subset/Get Data" under Data Access, followed by "Get File Subsets using the GES DISC Subsetter" in the "Download Method" section. Change the data range from 2023-01-01 to 2023-12-31 under Refine "Date Range", and enter -125,24.5,-66.5,50 under "Refine Region". Under "Select Variables", select precipitation. Afer this, click "Get Data" at the bottom. Click "Download Links List" from the following pop-up, and follow the Download Instructions.
+
+A .txt file containing the list of links will be created. Place the .txt file in the desired directory before running the command (I am using wget for Linux/OS). Replace the .txt file at the end of the wget command with the proper link.
+
+### MERRA2
+The process for MERRA2 data is very similar to that for IMERG. Data can be found here: https://disc.gsfc.nasa.gov/datasets/M2T1NXAER_5.12.4/summary. Use the same parameters as for the precipitation data, but under "Select Variables", choose the desired variables. For this study, BCCMASS, BCSMASS, DUCMASS, DUCMASS25, DUSMASS, DUSMASS25, OCCMASS, OCSMASS, SO2CMASS, SO2SMASS, SO4CMASS, SO4SMASS, SSCMASS, SSCMASS25, SSSMASS, and SSSMASS25 are used. "CMASS" variables correspond to aerosol column mass densities, while "SMASS" variables correspond to aerosol surface mass concentrations.
+
+### ERA5
+CAPE data is taken from the ECMWF's ERA5 reanalysis, linked here: https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=download. In order to use the following code, an account must be made on Copernicus, and the CDSAPI client must be set up. Instructions on how to configure the CDSAPI are here: https://cds.climate.copernicus.eu/how-to-api
+
+### WWLLN
+Lightning data is taken from the World Wide Lightning Location Network (WWLLN), developed at the University of Washington. Data is not publicly available, but is available upon request. Instructions are located here: https://wwlln.net/. Since the data is not publicaly available, I will be subsetting lightning data I have already obtained.

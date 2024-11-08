@@ -1,6 +1,7 @@
 # MLGEO2024_Lightning_Aerosol_Interactions
 ## Project Objectives
 Lightning is an important phenomenon to understand, due to its impact on the nitrogen cycle, as a key producer of nitrogen oxides. Additionally, lightning is responsible for a majority of the wildfire area burned in the United States. Studies have determined that the product of convective available potential energy (CAPE) and precipitation [Romps et al., 2014] is a good parameterization for lightning, in addition to an increase in aerosol concentrations being linked with an increase in lightning [Thornton et al., 2014]. However, the relative contributions of each of these factors is not presently understood.
+
 The goal of this project is to evaluate the relative importance of CAPE, precipitation and aerosol concentrations to lightning stroke density through the use of deep learning techniques. Greater understanding of what governs lightning has the potential to improve climate models by better capturing atmospheric chemistry, through better understanding of atmospheric nitrogen concentrations, which impact ozone and methane concentrations. Additionally, being able to predict lightning occurrence would improve wildfire preparation strategies, as wildfire prediction could increase. 
 
 ## Data Sources

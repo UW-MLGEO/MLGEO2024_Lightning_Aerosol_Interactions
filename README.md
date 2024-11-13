@@ -1,7 +1,8 @@
 # MLGEO2024_Lightning_Aerosol_Interactions
-ML Project investigating the links between lightning and aerosol concentrations in the Continental United States
+## Project Objectives
+Lightning is an important phenomenon to understand, due to its impact on the nitrogen cycle, as a key producer of nitrogen oxides. Additionally, lightning is responsible for a majority of the wildfire area burned in the United States. Studies have determined that the product of convective available potential energy (CAPE) and precipitation [Romps et al., 2014] is a good parameterization for lightning, in addition to an increase in aerosol concentrations being linked with an increase in lightning [Thornton et al., 2014]. However, the relative contributions of each of these factors is not presently understood.
 
-Data is currently located on an external server as file sizes exceed the limits allowed by GitHub.
+The goal of this project is to evaluate the relative importance of CAPE, precipitation and aerosol concentrations to lightning stroke density through the use of deep learning techniques. Greater understanding of what governs lightning has the potential to improve climate models by better capturing atmospheric chemistry, through better understanding of atmospheric nitrogen concentrations, which impact ozone and methane concentrations. Additionally, being able to predict lightning occurrence would improve wildfire preparation strategies, as wildfire prediction could increase. 
 
 ## Data Sources
 This project uses convective available potential energy (CAPE) from the ECMWF ERA5 reanalysis, precipitation from NASA's IMERG satellite, aerosol data from NASA's MERRA-2 reanalysis, and lightning data from the World Wide Lightning Location Network (WWLLN), developed at the University of Washington.
@@ -24,3 +25,6 @@ CAPE data is taken from the ECMWF's ERA5 reanalysis, linked here: https://cds.cl
 
 ### WWLLN
 Lightning data is taken from the World Wide Lightning Location Network (WWLLN), developed at the University of Washington. Data is not publicly available, but is available upon request. Instructions are located here: https://wwlln.net/. Since the data is not publicaly available, I will be subsetting lightning data I have already obtained.
+
+## Descriptions of Notebooks in Repository
+Download_Data.ipynb: This notebook is used for and has instructions on downloading data from IMERG, MERRA2 and ERA5. WWLLN data is not publicly available as mentioned above. Due to the sizes of the files producesd, it is recommended to output the files to an external server or save in a Google Drive.

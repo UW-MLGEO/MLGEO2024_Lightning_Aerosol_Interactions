@@ -26,5 +26,11 @@ CAPE data is taken from the ECMWF's ERA5 reanalysis, linked here: https://cds.cl
 ### WWLLN
 Lightning data is taken from the World Wide Lightning Location Network (WWLLN), developed at the University of Washington. Data is not publicly available, but is available upon request. Instructions are located here: https://wwlln.net/. Since the data is not publicaly available, I will be subsetting lightning data I have already obtained.
 
-## Descriptions of Notebooks in Repository
+## Descriptions of Notebooks in this Repository
 Download_Data.ipynb: This notebook is used for and has instructions on downloading data from IMERG, MERRA2 and ERA5. WWLLN data is not publicly available as mentioned above. Due to the sizes of the files producesd, it is recommended to output the files to an external server or save in a Google Drive.
+
+## Running the Notebooks in this Repository
+The notebooks in this repository were run in a remote server, so file paths will need to be edited to reflect where the files are stored on your machine. Additionally, a conda environment was created where all of these notebooks were run. To replicate the environment, download the .yml file and run:
+
+conda env create -f lightning.yml
+conda activate lightning

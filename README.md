@@ -32,5 +32,7 @@ Download_Data.ipynb: This notebook is used for and has instructions on downloadi
 ## Running the Notebooks in this Repository
 The notebooks in this repository were run in a remote server, so file paths will need to be edited to reflect where the files are stored on your machine. Additionally, a conda environment was created where all of these notebooks were run. To replicate the environment, download the .yml file and run:
 
+```
 conda env create -f lightning.yml
 conda activate lightning
+```

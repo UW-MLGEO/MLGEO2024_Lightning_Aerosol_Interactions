@@ -28,14 +28,23 @@ Lightning data is taken from the World Wide Lightning Location Network (WWLLN), 
 
 ## Descriptions of Notebooks in this Repository
 Download_Data.ipynb: This notebook is used for and has instructions on downloading data from IMERG, MERRA2 and ERA5. WWLLN data is not publicly available as mentioned above. Due to the sizes of the files producesd, it is recommended to output the files to an external server or save in a Google Drive.
+
 Data_Cleaning.ipynb: This notebook is used for cleaning the data, removing all outliers and NaN values.
+
 Prepare_AI_Ready_Data.ipynb: This notebook is used for resampling the different datasets to the same resolution, as well as combining all the separate datasets into a singular xarray dataset, which can be used in the machine learning models.
+
 EDA.ipynb: This notebook is used for the first steps of data analysis, in which the number of input variables is scaled down through the use of the Spearman correlation. Additionally, climatology maps of the different variables used in the study are made.
+
 AutoML_Hyperparameter_Tuning.ipynb: This notebook is used to tune the hyperparameters of the various classical machine learning techniques.
+
 Computational_Time_Analysis.ipynb: This notebook is used to compare the efficiency of the different classical machine learning approaches to this problem.
+
 Model_Training_Assessment.ipynb: This notebook is used for preliminary evaluation of the different classical machine learning techniques.
+
 ET_LGBM_Evaluation.ipynb: This notebook is used for further evaluation of the Extra Trees Regressor and the Light Gradient Boosting Machine, which were determined to be the best classical machine learning algorithms for this problem. Scatter plots and feature importance plots showing the success of the models are included.
+
 CNN.ipynb: This notebook is used for training and running the U-Nets used in this study.
+
 Deep_Learning_Output_Analysis.ipynb: This notebook is used for evaluation the output from both U-Nets trained and run in the notebook CNN.ipynb.
 
 ## Running the Notebooks in this Repository
